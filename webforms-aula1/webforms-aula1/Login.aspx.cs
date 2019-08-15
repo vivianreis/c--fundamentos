@@ -24,7 +24,7 @@ namespace webforms_aula1
             login.usuario = "admin";
             login.senha = "admin";
 
-            UsuarioBLL usuarioBLL = new UsuarioBLL();
+            UsuarioModel usuarioBLL = new UsuarioModel();
 
             if (usuarioBLL.Logar(txtLogin.Text, txtSenha.Text))
             {
@@ -32,7 +32,7 @@ namespace webforms_aula1
                 Session[Util.Util.SessaoUsuarioLogado] = usuarioBLL.UsuarioLogado;
 
 
-                Response.Redirect("Principal.aspx");
+                Response.Redirect("/Paginas/Principal.aspx");
             }
             else
             {

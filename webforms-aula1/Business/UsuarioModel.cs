@@ -7,7 +7,7 @@ using Business.Model;
 
 namespace Business
 {
-    public class UsuarioBLL
+    public class UsuarioModel
     {
 
         public Usuario UsuarioLogado
